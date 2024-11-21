@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar e Acompanhar Gastos</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <h1>Registrar e Acompanhar Gastos</h1>
+
+  <!-- Formulário para registrar gastos -->
+  <div>
+    <h3>Registrar Gasto</h3>
+    <input type="text" id="descricao" placeholder="Nome do gasto">
+    <input type="number" id="valor" placeholder="Valor Unitário">
+    <input type="number" id="parcelas" placeholder="Número de Parcelas">
+    <input type="text" id="pagarPara" placeholder="Para quem pagar">
+    <button onclick="registrarGasto()">Registrar</button>
+  </div>
+
+  <!-- Tabela para listar gastos -->
+  <div>
+    <h3>Gastos Registrados</h3>
+    <button onclick="listarGastos()">Atualizar Lista</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Descrição</th>
+          <th>Valor Total</th>
+          <th>Parcelas</th>
+          <th>Para quem pagar</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-gastos">
+        <!-- Os dados serão inseridos aqui dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+
+</html>
