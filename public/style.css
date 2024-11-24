@@ -1,39 +1,58 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+h3 {
   color: #333;
 }
 
-.container {
-  text-align: center;
-  padding: 50px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#formulario {
+  margin-bottom: 30px;
 }
 
-h1 {
-  color: #4CAF50;
+#formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
 
-p {
-  font-size: 18px;
-}
-
-button {
-  padding: 10px 20px;
-  margin: 20px 0;
-  font-size: 16px;
-  color: white;
-  background-color: #4CAF50;
-  border: none;
+#formulario input,
+#formulario select,
+#formulario button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+#formulario button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
+#formulario button.desfazer {
+  background-color: #dc3545;
+}
+
+#formulario button:hover {
+  opacity: 0.9;
 }
 
 table {
@@ -42,51 +61,18 @@ table {
   margin-top: 20px;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
   text-align: left;
 }
 
-th {
-  background-color: #4CAF50;
-  color: white;
+table th {
+  background-color: #007bff;
+  color: #fff;
 }
 
-tr:nth-child(even) {
+table tbody tr:nth-child(odd) {
   background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #ddd;
-}
-.painel {
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-height: 300px;
-  overflow-y: auto;
-  font-family: monospace;
-  white-space: pre;
-}
-
-.gasto-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.gasto-item button {
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 5px 10px;
-}
-
-.gasto-item button:hover {
-  background-color: #c0392b;
 }

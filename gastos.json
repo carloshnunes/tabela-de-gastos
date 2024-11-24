@@ -1,8 +1,40 @@
 [
   {
-    "descricao": "Fone",
+    "descricao": "Meu fone",
     "valor": 80,
-    "parcelas": 6,
-    "pagarPara": "Isa"
+    "pagarPara": "Isa",
+    "tipo": "parcelado",
+    "categoria": "lazer",
+    "parcelas": 7
+  },
+  {
+    "descricao": "GamePass",
+    "valor": 35,
+    "pagarPara": "Isa",
+    "tipo": "contínuo",
+    "categoria": "lazer"
+  },
+  {
+    "descricao": "GymPass",
+    "valor": 130,
+    "pagarPara": "Isa",
+    "tipo": "contínuo",
+    "categoria": "lazer"
+  },
+  {
+    "descricao": "Fone presente isa",
+    "valor": 110,
+    "pagarPara": "Cartão bb",
+    "tipo": "parcelado",
+    "categoria": "Presentes",
+    "parcelas": 5
+  },
+  {
+    "descricao": "Teclado",
+    "valor": 110,
+    "pagarPara": "Cartão BB",
+    "tipo": "parcelado",
+    "categoria": "Presentes",
+    "parcelas": 5
   }
 ]
